@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Control"
+    android:background="#d4e2eb">
+    <LinearLayout
+        android:id="@+id/linearLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#ADD8E6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/aflogo" />
+        <TextView
+            android:id="@+id/tvAutoFeederHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autofeeder"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/tvWiFiSetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/wi_fi_setup"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btSetup"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutWiFiName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWiFiSetup"
+        android:background="#ADD8E6">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWiFiName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter"
+            android:hint="@string/wi_fi_name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#808080"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@id/layoutWiFiPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRegister" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutWiFiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutWiFiName"
+        android:background="#ADD8E6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWiFiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/wi_fi_password"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890`~!@#$%^&amp;*()_+-=[]\{}|;':,./?"
+            android:inputType="textFilter"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#808080"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#ADD8E6"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutHome"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btConnectBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_to_autofeeder"
+        app:backgroundTint="#4f89ad"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutWiFiPassword"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:backgroundTint="#4f89ad"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

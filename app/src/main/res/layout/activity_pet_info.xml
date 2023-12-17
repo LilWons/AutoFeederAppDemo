@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4e2eb"
+    tools:context=".PetInfo">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPet"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="#ADD8E6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/aflogo" />
+
+        <TextView
+            android:id="@+id/tvAutoFeederPet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autofeeder"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btHomePet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#4f89ad"
+        android:minWidth="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutPet" />
+
+    <Button
+        android:id="@+id/btPetInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info"
+        android:textColor="@color/black"
+        app:backgroundTint="#ADD8E6"
+        android:minWidth="137dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutPet"
+        app:layout_constraintStart_toEndOf="@id/btPet"
+        app:layout_constraintEnd_toStartOf="@id/btHomePet"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_setup"
+        android:textColor="@color/black"
+        app:backgroundTint="#4f89ad"
+        android:minWidth="137dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutPet"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/tvPetNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btPetInfo" />
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPetNameTitle" />
+
+    <TextView
+        android:id="@+id/tvEnablePet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/free_feed"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPetName"/>
+
+    <TextView
+        android:id="@+id/tvFreeFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEnablePet"/>
+
+    <TextView
+        android:id="@+id/tvFoodAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/cups_of_food_per_meal"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFreeFeed"/>
+
+    <TextView
+        android:id="@+id/tvFoodAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFoodAmountTitle"/>
+
+    <TextView
+        android:id="@+id/tvWhatTimePet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/meal_times"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFoodAmount" />
+
+    <TextView
+        android:id="@+id/tvMealOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWhatTimePet" />
+    <TextView
+        android:id="@+id/tvMealTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealOne" />
+    <TextView
+        android:id="@+id/tvMealThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealTwo" />
+    <TextView
+        android:id="@+id/tvMealFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMealThree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

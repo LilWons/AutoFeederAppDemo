@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">AutoFeederApp</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="btLogin">Login</string>
+    <string name="autofeeder">AutoFeeder</string>
+    <string name="register">Register</string>
+    <string name="example_outlook_com">example@outlook.com</string>
+    <string name="HasAccount">Click here to login.</string>
+    <string name="ToRegister">Click here to Register.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="home">Home</string>
+    <string name="setup">Setup</string>
+    <string name="wi_fi_password">Wi-Fi Password</string>
+    <string name="wi_fi_name">Wi-Fi Name</string>
+    <string name="back">Back</string>
+    <string name="settings">Settings</string>
+    <string name="swipe_to_refresh">Swipe to refresh</string>
+    <string name="pet">Pet</string>
+    <string name="bowl_level">Bowl Level:</string>
+    <string name="food_level">Food Level:</string>
+    <string name="fault_n_check_pet_feeder">FAULT! \n Check Pet Feeder!</string>
+    <string name="feed_now">Feed Now</string>
+    <string name="refresh">Refresh</string>
+    <string name="account">Account</string>
+    <string name="pet_feeder_id">Pet Feeder ID</string>
+    <string name="list_of_bluetooth_devices">List Of Bluetooth Devices:</string>
+    <string name="bluetooth_setup">Bluetooth Setup</string>
+    <string name="search_for_autofeeder">Search For AutoFeeder</string>
+    <string name="how_much_food_per_meal_cups">How much food per meal (cups)?</string>
+    <string name="enter_pet_name_here">Enter pet name here.</string>
+    <string name="free_feed">Free Feed</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="enter_time_of_meals">Enter Time of Meals.</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="colon">:</string>
+    <string name="_00">00</string>
+    <string name="done">Done</string>
+    <string name="select_a_time_zone">Select a Time Zone</string>
+    <string name="select_amount_of_meals_per_day_n_1_4">Select Amount of Meals Per Day</string>
+    <string name="wi_fi_setup">Wi-Fi Setup</string>
+    <string name="connect_to_autofeeder">Connect to AutoFeeder</string>
+    <string name="cancel">Cancel</string>
+    <string name="_1_4">(1-4)</string>
+    <string name="pet_info">Pet Info</string>
+    <string name="pet_setup">Pet Setup</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="meal_times">Meal Times</string>
+    <string name="cups_of_food_per_meal">Amount of Food Per Meal</string>
+    <string name="format_string">%1$s</string>
+    <string name="select_amount_of_food_per_meal">Select Amount of Food Per Meal.</string>
+    <string name="autofeeder_status">AutoFeeder Status:</string>
+    <string name="hopper_level">Hopper Level:</string>
+    <string name="autofeeder_logo">AutoFeeder Logo</string>
+    <string name="settings_icon">Settings Icon</string>
+
+    <string-array name="timeZones">
+        <item>UTC-12:00, Y</item>
+        <item>UTC-11:00, X</item>
+        <item>UTC-10:00, W</item>
+        <item>UTC-09:30, V†</item>
+        <item>UTC-09:00, V</item>
+        <item>UTC-08:00, U</item>
+        <item>UTC-07:00, T</item>
+        <item>UTC-06:00, S</item>
+        <item>UTC-05:00, R</item>
+        <item>UTC-04:00, Q</item>
+        <item>UTC-03:30, P†</item>
+        <item>UTC-03:00, P</item>
+        <item>UTC-02:00, O</item>
+        <item>UTC-01:00, N</item>
+        <item>UTC+00:00, Z</item>
+        <item>UTC+01:00, A</item>
+        <item>UTC+02:00, B</item>
+        <item>UTC+03:00, C</item>
+        <item>UTC+03:30, C†</item>
+        <item>UTC+04:00, D</item>
+        <item>UTC+04:30, D†</item>
+        <item>UTC+05:00, E</item>
+        <item>UTC+05:30, E†</item>
+        <item>UTC+05:45, E*</item>
+        <item>UTC+06:00, F</item>
+        <item>UTC+06:30, F†</item>
+        <item>UTC+07:00, G</item>
+        <item>UTC+08:00, H</item>
+        <item>UTC+08:45, H*</item>
+        <item>UTC+09:00, I</item>
+        <item>UTC+09:30, I†</item>
+        <item>UTC+10:00, K</item>
+        <item>UTC+10:30, K†</item>
+        <item>UTC+11:00, L</item>
+        <item>UTC+12:00, M</item>
+        <item>UTC+12:45, M*</item>
+        <item>UTC+13:00, M†</item>
+        <item>UTC+14:00, M†</item>
+    </string-array>
+
+    <string-array name="mealPerDay">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="perMealAmount">
+        <item>¼ cup</item>
+        <item>⅓ cup</item>
+        <item>½ cup</item>
+        <item>⅔ cup</item>
+        <item>¾ cup</item>
+        <item>1 cup</item>
+    </string-array>
+
+    <string-array name="hour">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="minute">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+</resources>
