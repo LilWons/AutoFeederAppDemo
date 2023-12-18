@@ -1,4 +1,11 @@
-# AutoFeeder Application
+# Demo Information
+The purpose of these code examples is to demonstrate the following setup intergration features:
+- Google Firebase Authentication
+- Bluetooth Low Energy Communication
+- Permission request and handling
+  
+## AutoFeeder Application
+This section will overview the AutoFeeder Application and its features.
 
 **AutoFeeder Application Specifications**
 
