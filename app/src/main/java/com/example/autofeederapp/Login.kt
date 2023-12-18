@@ -1,11 +1,6 @@
 /*
-    Author: Richard Hart
-    Student Number: 991627469
+    Author: LilWons
     Project: AutoFeeder Application.
-    Class: 1239_44805
-    Course: ENGI39228 Capstone Project for CET/EET
-    School: Sheridan College
-    Instructor: Ning Zhu
     Date: 2023-12-11
 
     Description: AutoFeeder Login Activity.

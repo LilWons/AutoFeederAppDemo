@@ -6,7 +6,15 @@
 /local.properties/
 /.idea/
 /app/build/
-/local.properties
+/app/res/
+/app/manifests/
+/app/kotlin+java/com.example.autofeederapp/MyFirebaseMessagingService.kt
+/app/kotlin+java/com.example.autofeederapp/Pet.kt
+/app/kotlin+java/com.example.autofeederapp/PetInfo.kt
+/app/kotlin+java/com.example.autofeederapp/MainActivity.kt
+/app/kotlin+java/com.example.autofeederapp/ExampleInstrumentedTest.kt
+/app/kotlin+java/com.example.autofeederapp/ExampleUnitTest
+
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
